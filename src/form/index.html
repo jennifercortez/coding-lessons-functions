@@ -30,7 +30,23 @@
 
         *********/
 
+        var outputResponse = function(name, choice){
+
+          console.log(name, choice);
+
+          if (name == 'meiying' && choice == "tea"){
+          return "You're amazing!!!";
+          }
+
+          if (choice == 'coffee' && name == "jennifer"){
+          return "Take Meiying's advice and drink tea instead.";
+          }
           
+          else {
+          return "What? Boo!";
+
+          }
+        }
             
           
 
@@ -64,12 +80,12 @@
         </div>
    
         <div class="form-group">
-            <label for="theirChoice">Do you like cats or dogs</label><br>
-            <input type="radio" class="theirChoice radio" name="pet"  value="dogs"> Dogs<br>
-            <input type="radio" class="theirChoice radio" name="pet" value="cats"> Cats<br>
+            <label for="theirChoice">Do you like coffee or tea?</label><br>
+            <input type="radio" class="theirChoice radio" name="pet"  value="coffee"> Coffee<br>
+            <input type="radio" class="theirChoice radio" name="pet" value="tea"> Tea<br>
         </div>
         
-        <button type="button" class="btn btn-info" id="submit">Submit You Answer</button>
+        <button type="button" class="btn btn-info" id="submit">Submit Your Answer</button>
       
 		<div id="response">
 
